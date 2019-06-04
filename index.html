@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Title</title>
+<link rel="stylesheet" href="C:\Users\user\Desktop\Projects\Digital Crafters\font-awesome-4.7.0\css\font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Open+Sans:400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <body>
@@ -14,7 +14,7 @@
                   <img src="images\logo&preloader\logo.png" alt="">
                </a>
             </div>
-            <div id="nav_side">
+            <div id="nav_side" >
                <ul>
                   <a href="#home">Home</a>
                   <a href="#services">Services</a>
@@ -29,15 +29,35 @@
                   <a href="#contact">Contact</a>            
                </ul>
             </div>
+            <i class="fa fa-bars" aria-hidden="true" id="responsive_side_menu_icon" onclick="hide_visible()"></i>
+            <div id="responsive_side_menu" >
+                  <ul>
+                     <a href="#home">Home</a>
+                     <a href="#services">Services</a>
+                     <a href="#portfolio">Portfolio</a>
+                     <a href="#clients">Clients</a>
+                     <a href="#news">News</a>
+                     <a href="#skills">Skills</a>
+                     <a href="#team">Team</a>
+                     <a href="#milestones">Milestones</a>
+                     <a href="#about">About</a>
+                     <a href="#pricing">Pricing</a>
+                     <a href="#contact">Contact</a>            
+                  </ul>
+            </div>
          </div>
          <div class="header">
-            <div id="main_title"></div>
+            
+               <h1 id="main_title">Digital Crafters <br> Clean Code & Neat Design</h1>
+               <p id="main_subtitle">We are Meelo. Award-winning design & code <br> crafters with office in New York City</p>
+           
             <div id="side_photo"></div>
             <div id="main_photo"></div>
          </div>
    </div>
    
    <div id="services"></div>
+   <script src="js/script.js"></script>
 </body>
 
 </html>

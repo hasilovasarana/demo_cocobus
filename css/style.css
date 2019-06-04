@@ -2,6 +2,7 @@ body{
     margin:0px;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Karla', sans-serif;
+    
 }
 #home{
     width:100%;
@@ -14,6 +15,7 @@ body{
     background-color: aqua;
     position: fixed;   
     display: flex;
+    z-index: 1;
   
     
 }
@@ -26,8 +28,8 @@ body{
 
 }
 #nav_side ul{
-    margin-left: 220px;
-    margin-right:13px;
+    margin-left: 240px;
+    margin-right:0px;
 }
 #nav_side ul a{
    font-size:14px;
@@ -41,22 +43,93 @@ body{
    
    
 }
+#responsive_side_menu{
+    display: none;
+}
+#responsive_side_menu_icon{
+    font-size: 30px;    
+    position: absolute;
+    top: 20px;
+    right: 13px;
+    color: #264549;
+    display: none;
+}
 
+/* #responsive_side_menu ul a{
+   font-size:14px;
+   font-weight: 400;
+   font-family: 'Karla', sans-serif;
+   text-decoration: none;
+   padding: 10px 18px 10px 18px;
+   margin-bottom: 5px;
+   position: relative;
+   top:10px;
+   color:#264549;
+   
+} */
 /* Responsive CSS */
 
-@media only screen and (min-width: 1125px) {
+@media only screen and (max-width: 1125px) {
     #nav_side ul {
         margin-left: 0px;
         margin-right:13px;
+       
     
     }
   }
+  @media only screen and (max-width: 1124px){
+    #responsive_side_menu_icon{
+        display: block;
+
+    }
+    #nav_side ul{
+        display:none;
+    }
+  }
 @media only screen and (max-width: 1124px){
-    #nav_side {
-        /* Responsive Side Menu */
+    #responsive_side_menu{
+        display: none;
+        width:250px;
+        height:calc(100% - 75px);
+        background-color: rgb(172, 187, 185);
+        position: fixed;     
+        margin-top:75px;
+        right:0px;
+    }
+    #responsive_side_menu ul{
+        width: 115px;
+        padding-left: calc(50% - 57px);
+        padding-right: calc(50% - 57px);      
+        
+    }
+    #responsive_side_menu ul a{
+        font-size:14px;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+        text-decoration: none;
+        padding: 10px 18px 10px 18px;      
+        position: relative;
+        top:10px;
+        left:10px;
+        text-align: justify;
+        color:#264549;      
+        line-height: 40px;
+      
     }
 }  
-
+.header h1,.header p{
+    position: relative;
+    top:240px;
+    left:80px;
+    margin:0px 0px 0px 0px;
+    /* margin:top,right,bottom,left */
+}
+.header h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 60px;
+}
 #services{
     width:100%;
     height:1000px;
